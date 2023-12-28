@@ -1,0 +1,48 @@
+{
+  "name": "arcgis-chart-amd-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@devtopia.esri.com:WebGIS/analysis-web-analysis.git"
+  },
+  "keywords": [
+    "arcgis",
+    "charts components",
+    "amd sample"
+  ],
+  "scripts": {
+    "serve": "node ./scripts/server.js",
+    "start": "yarn serve"
+  },
+  "devDependencies": {
+    "@dojo/framework": "5.0.0",
+    "@types/later": "^1.2.6",
+    "@types/prettier": "1.15.2",
+    "dojo-typings": "^1.11.11",
+    "dojo-util": "git+ssh://git@devtopia.esri.com/WebGIS/js-util.git#1.17.3-esri",
+    "eslint": "~7.20.0",
+    "eslint-plugin-amd-imports": "^4.0.0",
+    "express": "^4.16.4",
+    "prettier": "~2.2.1",
+    "rimraf": "^3.0.2",
+    "sass": "~1.51.0",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "@arcgis/charts-components": "1.0.0-beta.697",
+    "@esri/calcite-components": ">=2.0.0-rc <2.1.0",
+    "dijit": "git+ssh://git@devtopia.esri.com/WebGIS/js-dijit.git#1.17.3-esri",
+    "dojo": "git+ssh://git@devtopia.esri.com/WebGIS/js-dojo.git#1.17.3-esri",
+    "dojox": "git+ssh://git@devtopia.esri.com/WebGIS/js-dojox.git#1.17.3-esri",
+    "tslib": "~2.3.0"
+  },
+  "resolutions": {
+    "dijit": "1.17.3",
+    "dojo": "1.17.3",
+    "dojox": "1.17.3",
+    "dojo-util": "1.17.3"
+  }
+}

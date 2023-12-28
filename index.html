@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <title>ArcGIS Charts Components using AMD build</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://jsdev.arcgis.com/next/esri/css/main.css" />
+    <script
+      defer
+      type="module"
+      crossorigin="use-credentials"
+      src="../node_modules/@esri/calcite-components/dist/calcite/calcite.esm.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/@esri/calcite-components/dist/calcite/calcite.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@arcgis/charts-components/dist/arcgis-charts-components/arcgis-charts-components.css"
+    />
+
+    <link rel="stylesheet" href="./styles/app.css" />
+  </head>
+
+  <body>
+    <calcite-shell content-behind>
+      <header slot="header" class="demo-header">
+        <span style="font-size: 16px; padding-right: 1rem; z-index: 102">ArcGIS Charts Components using AMD build</span>
+      </header>
+      <calcite-shell-center-row slot="center-row" detached height-scale="m" style="width: 100%">
+        <div id="chartRef"></div>
+      </calcite-shell-center-row>
+      <div id="viewDiv"></div>
+    </calcite-shell>
+    <script src="./js/dojoConfig.js"></script>
+    <script src="./node_modules/dojo/dojo.js"></script>
+    <script defer src="./js/main.js"></script>
+  </body>
+</html>
